@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>splash</title>
+    <link rel="stylesheet" href="./assets/css/splashRain.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div id="img">
+        <div id="canva">
+            <canvas id="canvas1"></canvas>
+        </div>
+
+        <div id="presenting" data-aos="zoom-in" data-aos-duration="2000">
+            <div id="pc" data-aos="fade-left" data-aos-duration="2500">
+                <img src="./assets/images/circle-cropped-pc-logo.png" alt="" width="100px">
+            </div>
+            <div id="wz" data-aos="fade-right" data-aos-duration="2500">
+                <img src="./assets/images/circle-cropped-ww-logo.png" alt="" width="100px">
+            </div>
+            <div id="welcome">
+                <h1 id="presents" data-aos="flip-up" data-aos-duration="2000">Presents</h1>
+                <h1 data-aos="zoom-out" data-aos-duration="2000">
+                    <EM>LET'S REVEAL THE SECRETS TOGETHER🐍</EM>
+                </h1>
+            </div>
+            <div id="button">
+                <a href="./index.html"><button id="btn"> Skip</button></a>
+            </div>
+        </div>
+
+    </div>
+
+    <embed src="./assets/audio/hp-theme.mp3" autostart style="visibility: hidden;"></embed>
+    <script src="./assets/js/splashScript.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        setTimeout("location.href = 'index.html';", 10000);
+    </script>
+</body>
+
+</html>
