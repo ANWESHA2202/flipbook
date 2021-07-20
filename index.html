@@ -1,212 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlipBook</title>
-    <link rel="stylesheet" href="./assets/css/book.css" />
+    <link rel="stylesheet" href="./assets/css/splashRain.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
 
-    <!-- bootstrap css-->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-  </head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
 
-  <body>
-    <div class="about">
-      <div class="para">
-        <p>
-          Harry Potter and the Chamber of Secrets is a fantasy novel written by
-          British author J. K. Rowling and the second novel in the Harry Potter
-          series. The plot follows Harry's second year at Hogwarts School of
-          Witchcraft and Wizardry, during which a series of messages on the
-          walls of the school's corridors warn that the "Chamber of Secrets" has
-          been opened and that the "heir of Slytherin" would kill all pupils who
-          do not come from all-magical families. These threats are found after
-          attacks that leave residents of the school petrified. Throughout the
-          year, Harry and his friends Ron and Hermione investigate the attacks.
-        </p>
-      </div>
-      <div class="butn" data-toggle="modal" data-target="#exampleModalCenter">
-        <button>WHAT IS HIDDEN !</button>
-      </div>
-    </div>
-    <!-- modal div -->
-    <div
-      class="modal fade"
-      id="exampleModalCenter"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <iframe
-            src="https://www.youtube.com/embed/1bq0qff4iF8?start=59"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+<body>
+    <div id="img">
+        <div id="canva">
+            <canvas id="canvas1"></canvas>
         </div>
-      </div>
-    </div>
-    <!-- modal end -->
 
-    <!-- book part -->
-    <div class="book">
-      <div class="wrapper">
-        <div class="aspect">
-          <div class="aspect-inner">
-            <div class="flipbook" id="flipbook">
-              <div id="cover" class="page hard">
-                <img src="./assets/images/covercos.jpg" alt="cover-image" />
-              </div>
-              <div
-                id="p1"
-                class="page hard"
-                style="background-color: aliceblue"
-              ></div>
-              <div id="p2" class="page">
-                <img src="./assets/images/insidep1.png" alt="" />
-              </div>
-              <div
-                id="p3"
-                class="page"
-                style="background-color: aliceblue"
-              ></div>
-              <div id="p4" class="page">
-                <img src="./assets/images/insidep2.png" alt="" />
-              </div>
-              <div
-                id="p5"
-                class="page"
-                style="background-color: aliceblue"
-              ></div>
-              <div id="p6" class="page">
-                <img src="./assets/images/insidep3.png" alt="" />
-              </div>
-              <div
-                id="p7"
-                class="page"
-                style="background-color: aliceblue"
-              ></div>
-              <div id="p8" class="page">
-                <img src="./assets/images/insidep4.png" alt="" />
-              </div>
-              <div id="p9" class="page">
-                <img src="./assets/images/insidep5.png" alt="" />
-              </div>
-              <div id="p10" class="page">
-                <img src="./assets/images/insidep6.png" alt="" />
-              </div>
-              <div id="p11" class="page">
-                <img src="./assets/images/insidep7.png" alt="" />
-              </div>
-              <div id="p12" class="page">
-                <img src="./assets/images/insidep8.png" alt="" />
-              </div>
-              <div id="p13" class="page">
-                <img src="./assets/images/insidep9.png" alt="" />
-              </div>
-              <div id="p14" class="page">
-                <img src="./assets/images/insidep10.png" alt="" />
-              </div>
-              <div id="p15" class="page">
-                <img src="./assets/images/insidep11.png" alt="" />
-              </div>
-              <div id="p16" class="page">
-                <img src="./assets/images/insidep12.png" alt="" />
-              </div>
-              <div id="p17" class="page">
-                <img src="./assets/images/insidep13.png" alt="" />
-              </div>
-              <div
-                id="p18"
-                class="page"
-                style="background-color: aliceblue"
-              ></div>
+        <div id="presenting" data-aos="zoom-in" data-aos-duration="2000">
+            <div id="pc" data-aos="fade-left" data-aos-duration="2500">
+                <img src="./assets/images/circle-cropped-pc-logo.png" alt="" width="100px">
             </div>
-          </div>
+            <div id="wz" data-aos="fade-right" data-aos-duration="2500">
+                <img src="./assets/images/circle-cropped-ww-logo.png" alt="" width="100px">
+            </div>
+            <div id="welcome">
+                <h1 id="presents" data-aos="flip-up" data-aos-duration="2000">Presents</h1>
+                <h1 data-aos="zoom-out" data-aos-duration="2000">
+                    <EM>LET'S REVEAL THE SECRETS TOGETHER🐍</EM>
+                </h1>
+            </div>
+            <div id="button">
+                <a href="./home.html"><button id="btn"> Skip</button></a>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- book end -->
 
-    <div id="footer">
-      <p id="quote">
-        "Fear of a <strong>Name</strong> only <strong>Increases</strong
-        ><br />Fear of the <strong>Thing</strong> itself.."
-      </p>
-      <p id="author">
-        <strong><em>-Hermione Granger</em></strong>
-      </p>
-      <p style="color: rgb(70, 69, 69)">created by Anwesha Sanyal</p>
     </div>
 
-    <!-- svg filter -->
-    <svg>
-      <defs>
-        <filter id="wave">
-          <feTurbulence
-            type="fractalNoise"
-            baseFrequency="0.30 0.21"
-            numOctaves="1"
-            result="warp"
-          />
-          <feDisplacementMap
-            xChannelSelector="R"
-            yChannelSelector="G"
-            scale="30"
-            in="SourceGraphic"
-            in2="warpOffset"
-          />
-        </filter>
-      </defs>
-    </svg>
-    <!-- filter end -->
-
-    <!-- my script -->
-    <script src="./assets/js/script.js"></script>
-
-    <!-- jquery -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- bootstrap js -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- turnjs -->
-    <script src="./assets/js/turn.min.js"></script>
+    <embed src="./assets/audio/hp-theme.mp3" autostart style="visibility: hidden;"></embed>
+    <script src="./assets/js/splashScript.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      const flipbook = document.getElementById("flipbook");
-
-      window.addEventListener("resize", function (e) {
-        flipbook.style.width = "";
-        flipbook.style.height = "";
-        $(flipbook).turn("size", flipbook.clientWidth, flipbook.clientHeight);
-      });
-
-      $(flipbook).turn({
-        autoCenter: true,
-      });
+        AOS.init();
     </script>
-  </body>
+
+    <script>
+        setTimeout("location.href = 'home.html';", 10000);
+    </script>
+</body>
+
 </html>
